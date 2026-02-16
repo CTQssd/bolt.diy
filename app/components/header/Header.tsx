@@ -18,7 +18,9 @@ export function Header() {
     >
       <div className="flex items-center gap-2 text-bolt-elements-textPrimary">
         <div
-          onClick={() => sidebarStore.set(!sidebarStore.get())}
+          onClick={() => {
+            sidebarStore.set(!sidebarStore.get());
+          }}
           className="i-ph:sidebar-simple-duotone text-xl cursor-pointer transition-all hover:text-bolt-elements-item-contentAccent"
         />
         <a href="/" className="text-2xl font-extrabold text-bolt-elements-textPrimary flex items-center">
