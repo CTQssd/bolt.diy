@@ -2,6 +2,6 @@ name = "boltdiy"
 compatibility_date = "2024-09-02"
 pages_build_output_dir = "./build/client" # For Cloudflare Pages
 
-# If you are deploying as a Worker:
-main = "./build/server/index.js"
-assets = { directory = "./build/client" }
+
+# ADD THIS:
+pages_build_output_dir = "./build/client"
