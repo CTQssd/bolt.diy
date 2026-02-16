@@ -4,7 +4,7 @@ import { chatStore } from '~/lib/stores/chat';
 import { classNames } from '~/utils/classNames';
 import { HeaderActionButtons } from './HeaderActionButtons.client';
 import { ChatDescription } from '~/lib/persistence/ChatDescription.client';
-import { sidebarStore, toggleSidebar } from '~/lib/stores/sidebar';
+import { sidebarStore } from '~/lib/stores/sidebar';
 
 export function Header() {
   const chat = useStore(chatStore);
@@ -17,8 +17,8 @@ export function Header() {
       })}
     >
       <div className="flex items-center gap-2 text-bolt-elements-textPrimary">
-        <button
-          onClick={() => toggleSidebar()}
+        <div
+          onClick={() => sidebarStore.set(!sidebarStore.get())}
           className="i-ph:sidebar-simple-duotone text-xl cursor-pointer transition-all hover:text-bolt-elements-item-contentAccent"
         />
         <a href="/" className="text-2xl font-extrabold text-bolt-elements-textPrimary flex items-center">
