@@ -16,9 +16,12 @@ export function Header() {
         'border-bolt-elements-borderColor': chat.started,
       })}
     >
-      <div className="flex items-center gap-2 z-logo text-bolt-elements-textPrimary cursor-pointer">
-        <div className="i-ph:sidebar-simple-duotone text-xl" onClick={() => toggleSidebar()} />
-        <a href="/" className="text-2xl font-bold text-bolt-elements-textPrimary flex items-center">
+      <div className="flex items-center gap-2 z-logo text-bolt-elements-textPrimary">
+        <button
+          onClick={() => toggleSidebar()}
+          className="i-ph:sidebar-simple-duotone text-xl cursor-pointer transition-all hover:text-bolt-elements-item-contentAccent"
+        />
+        <a href="/" className="text-2xl font-extrabold text-bolt-elements-textPrimary flex items-center">
           nil.<span className="text-sky-500">ai</span>
         </a>
       </div>
