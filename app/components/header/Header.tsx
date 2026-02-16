@@ -16,7 +16,7 @@ export function Header() {
         'border-bolt-elements-borderColor': chat.started,
       })}
     >
-      <div className="flex items-center gap-2 z-logo text-bolt-elements-textPrimary">
+      <div className="flex items-center gap-2 text-bolt-elements-textPrimary">
         <button
           onClick={() => toggleSidebar()}
           className="i-ph:sidebar-simple-duotone text-xl cursor-pointer transition-all hover:text-bolt-elements-item-contentAccent"
