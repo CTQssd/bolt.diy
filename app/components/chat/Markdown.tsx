@@ -73,7 +73,7 @@ export const Markdown = memo(({ children, html = false, limitedMarkdown = false 
       remarkPlugins={remarkPlugins(limitedMarkdown)}
       rehypePlugins={rehypePlugins(html)}
     >
-      {stripCodeFenceFromArtifact(children)}
+      {children}
     </ReactMarkdown>
   );
 });
